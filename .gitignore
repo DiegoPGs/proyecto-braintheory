@@ -138,3 +138,7 @@ ui-tests/.pnp.*
 
 # generated html
 notebook/templates/*.html
+
+hcp_task/*
+/proyecto/hcp_task
+proyecto/hcp_task.tgz
