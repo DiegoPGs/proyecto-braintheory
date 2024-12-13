@@ -147,3 +147,5 @@ metrics_df, training_time = optimized_training(
 )
 
 print(f"Tiempo total de entrenamiento: {training_time:.2f} segundos")
+
+# TODO: Agregar este programa en la libreta de Jupyter
