@@ -90,3 +90,5 @@ print(f"Usando dispositivo: {DEVICE}")
 HCP_DIR = "./hcp_task"
 if not os.path.exists(HCP_DIR):
     os.makedirs(HCP_DIR)
+
+# TODO: Sustituir con el setup en la libreta de proyecto
