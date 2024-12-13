@@ -122,3 +122,28 @@ def optimized_training(
     total_time = time.time() - start_time
     
     return pd.DataFrame(metrics), total_time
+
+# Definir parámetros
+model_params = {
+    'n_features': 360,
+    'n_timesteps': 67,
+    'n_hidden': 20,
+    'n_layers': 3
+}
+
+training_params = {
+    'lr': 1e-3,
+    'batch_size': 16,  # Ajustar según memoria disponible
+    'n_epochs': 50,
+    'label_type': 'WL'
+}
+
+# Entrenar modelo
+metrics_df, training_time = optimized_training(
+    experiment='GAMBLING',
+    regions=list(range(360)),
+    model_params=model_params,
+    training_params=training_params
+)
+
+print(f"Tiempo total de entrenamiento: {training_time:.2f} segundos")
